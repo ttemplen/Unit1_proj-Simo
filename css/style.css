@@ -1,0 +1,200 @@
+body {
+    background-color: azure;
+  }
+  
+
+  
+  #outerCircle {
+    background: #6e737b;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    border-style: solid;
+    border-width: 10px;
+    margin: auto;
+    margin-top: 60px;
+    box-shadow: 8px 8px 15px 5px #888888;
+  }
+  
+  #topLeft {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 250px 0 0 0;
+    background: rgb(2, 99, 2);
+    top: 50%;
+    left: 50%;
+    margin: -250px 2px 2px -250px;
+    border-style: groove;
+    border-width: 5px;
+    box-sizing: border-box;
+  
+  }
+  
+  #topRight {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 250px 0 0;
+    background: rgb(140, 6, 6);
+    top: 50%;
+    left: 50%;
+    margin: -250px 2px 2px 2px;
+    border-style: groove;
+    border-width: 5px;
+    box-sizing: border-box;
+  }
+  
+  #bottomLeft {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 0 0 250px;
+    background: rgb(206, 158, 36);
+    top: 50%;
+    left: 50%;
+    margin: 2px -250px 2px -250px;
+    border-style: groove;
+    border-width: 5px;
+    box-sizing: border-box;
+  }
+  
+  #bottomRight {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 0 250px 0;
+    background: rgb(5, 5, 138);
+    top: 50%;
+    left: 50%;
+    margin: 2px 2px -250px 0px;
+    border-style: groove;
+    border-width: 5px;
+    box-sizing: border-box;
+  }
+  
+  #innerCircle {
+    position: absolute;
+    background: rgb(130, 128, 128);
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    border-style: groove;
+    border-width: 10px;
+    top: 50%;
+    left: 50%;
+    margin: -125px 2px 2px -125px;
+    box-sizing: border-box;
+   
+  }
+  .button{
+    position: absolute;
+    top: 220px;
+    left: 168px;
+  }
+  button{
+    border-radius: 25%;
+    font-size: 35pt;
+    font-weight: bold;
+    box-shadow: 8px 8px 15px 5px #3e3c3c;
+  }
+  @media( max-width:565px  ){
+    #outerCircle {
+      background: #6e737b;
+      border-radius: 50%;
+      height: 400px;
+      width: 400px;
+      position: relative;
+      border-style: solid;
+      border-width: 10px;
+      margin: auto;
+      margin-top: 60px;
+      box-shadow: 8px 8px 15px 5px #888888;
+    }
+    
+    #topLeft {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      border-radius: 200px 0 0 0;
+      background: rgb(2, 99, 2);
+      top: 50%;
+      left: 50%;
+      margin: -200px 2px 2px -200px;
+      border-style: groove;
+      border-width: 5px;
+      box-sizing: border-box;
+    
+    }
+    
+    #topRight {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      border-radius: 0 200px 0 0;
+      background: rgb(140, 6, 6);
+      top: 50%;
+      left: 50%;
+      margin: -200px 2px 2px 2px;
+      border-style: groove;
+      border-width: 5px;
+      box-sizing: border-box;
+    }
+    
+    #bottomLeft {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      border-radius: 0 0 0 200px;
+      background: rgb(206, 158, 36);
+      top: 50%;
+      left: 50%;
+      margin: 2px -200px 2px -200px;
+      border-style: groove;
+      border-width: 5px;
+      box-sizing: border-box;
+    }
+    
+    #bottomRight {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      border-radius: 0 0 200px 0;
+      background: rgb(5, 5, 138);
+      top: 50%;
+      left: 50%;
+      margin: 2px 2px -200px 0px;
+      border-style: groove;
+      border-width: 5px;
+      box-sizing: border-box;
+    }
+    
+    #innerCircle {
+      position: absolute;
+      background: rgb(130, 128, 128);
+      border-radius: 50%;
+      height: 180px;
+      width: 180px;
+      border-style: groove;
+      border-width: 10px;
+      top: 235px;
+      left: 235px;
+      margin: -125px 2px 2px -125px;
+      box-sizing: border-box;
+     
+    }
+    .button{
+      position: absolute;
+      top: 180px;
+      left: 138px;
+    }
+    button{
+      border-radius: 25%;
+      font-size: 25pt;
+      font-weight: bold;
+      box-shadow: 8px 8px 15px 5px #3e3c3c;
+    }
+
+
+  }
