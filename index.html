@@ -20,24 +20,28 @@
             </audio>  
     </head>
     <body>
-        <h1>
-            The Game of SIMON
-        </h1>
-        <p> To play click the start button, then repeat the sequence flashed on the buttons by clicking on them in the same order.
-        </p>
-        
+    <h1>Simon</h1>
+
         <div id="outerCircle">
             <div id="topLeft"></div>
             <div id="topRight"></div>
             <div id="bottomLeft"></div>
             <div id="bottomRight"></div>
             <div id="innerCircle"></div>
-                <div class="button">
-                    <button type="reset">START</button>
-                </div>
                 
+                <div id="switches">
+                    <input type = "checkbox" class="toggle" id="on">
+                    <button class ="button" id="start">Start</button>
+                    <input type = "checkbox" class="toggle" id="strict">
                 </div>
-            </div>
+                <div class="text1">
+                    <span> Power</span><span>Strict</span>
+                </div> 
+                 <div id = "turn"></div>
+                <div class = "text2"> 
+                    Count
+                </div>
+            
         </div>
     
 

@@ -2,7 +2,9 @@ body {
     background-color: azure;
   }
   
-
+h1{
+  text-align: Center;
+}
   
   #outerCircle {
     background: #6e737b;
@@ -90,7 +92,7 @@ body {
   }
   .button{
     position: absolute;
-    top: 220px;
+    top: 20px;
     left: 168px;
   }
   button{
@@ -99,7 +101,66 @@ body {
     font-weight: bold;
     box-shadow: 8px 8px 15px 5px #3e3c3c;
   }
+
+  .toggle {
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+  
+  .button {
+    border-radius: 50% !important;
+    font-size: 22px;
+    background-color: lightgray;
+  }
+  
+  #switches {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 46px;
+    margin-top: 200px;
+  }
+  
+  .text2 {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 225px;
+    margin-top: 275px;
+    
+  }
+  
+  .text1 {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 140px;
+    margin-top: 182px;
+  }
+  
+  span{
+    padding: 30px;
+  }
+  
+   
+  #turn {
+    position: absolute;
+    background: #330000;
+    color: red;
+    font-family: courier;
+    font-size: 20px;
+    height: 30px;
+    width: 50px;
+    margin-left: 225px;
+    margin-top: 310px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+  }
+  
+
   @media( max-width:565px  ){
+    h1{
+      text-align: left;
+    }
+    
     #outerCircle {
       background: #6e737b;
       border-radius: 50%;
@@ -186,15 +247,67 @@ body {
     }
     .button{
       position: absolute;
-      top: 180px;
-      left: 138px;
+      top: 10px;
+      left: 158px;
+      border-radius: 50%;
+      font-size: 22px;
+      background-color: lightgray;
     }
     button{
       border-radius: 25%;
-      font-size: 25pt;
+      font-size: 35pt;
       font-weight: bold;
       box-shadow: 8px 8px 15px 5px #3e3c3c;
     }
+  
+    .toggle {
+      margin-left: 120px;
+      margin-top: 20px;
+    }
+    
+    
+    #switches {
+      position: absolute;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-left: 3px;
+      margin-top: 170px;
+    }
+    
+    .text2 {
+      position: absolute;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-left: 175px;
+      margin-top: 215px;
+      
+    }
+    
+    .text1 {
+      position: absolute;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-left: 95px;
+      margin-top: 162px;
+    }
+    
+    span{
+      padding: 30px;
+    }
+    
+     
+    #turn {
+      position: absolute;
+      background: #330000;
+      color: red;
+      font-family: courier;
+      font-size: 20px;
+      height: 30px;
+      width: 50px;
+      margin-left: 175px;
+      margin-top: 240px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 30px;
+    }
+    
 
 
   }
