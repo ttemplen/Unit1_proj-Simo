@@ -1,0 +1,313 @@
+body {
+    background-color: azure;
+  }
+  
+h1{
+  text-align: Center;
+}
+  
+  #outerCircle {
+    background: #6e737b;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    border-style: solid;
+    border-width: 10px;
+    margin: auto;
+    margin-top: 60px;
+    box-shadow: 8px 8px 15px 5px #888888;
+  }
+  
+  #topLeft {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 250px 0 0 0;
+    background: rgb(2, 99, 2);
+    top: 50%;
+    left: 50%;
+    margin: -250px 2px 2px -250px;
+    border-style: groove;
+    border-width: 5px;
+    box-sizing: border-box;
+  
+  }
+  
+  #topRight {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 250px 0 0;
+    background: rgb(140, 6, 6);
+    top: 50%;
+    left: 50%;
+    margin: -250px 2px 2px 2px;
+    border-style: groove;
+    border-width: 5px;
+    box-sizing: border-box;
+  }
+  
+  #bottomLeft {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 0 0 250px;
+    background: rgb(206, 158, 36);
+    top: 50%;
+    left: 50%;
+    margin: 2px -250px 2px -250px;
+    border-style: groove;
+    border-width: 5px;
+    box-sizing: border-box;
+  }
+  
+  #bottomRight {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 0 250px 0;
+    background: rgb(5, 5, 138);
+    top: 50%;
+    left: 50%;
+    margin: 2px 2px -250px 0px;
+    border-style: groove;
+    border-width: 5px;
+    box-sizing: border-box;
+  }
+  
+  #innerCircle {
+    position: absolute;
+    background: rgb(130, 128, 128);
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    border-style: groove;
+    border-width: 10px;
+    top: 50%;
+    left: 50%;
+    margin: -125px 2px 2px -125px;
+    box-sizing: border-box;
+   
+  }
+  .button{
+    position: absolute;
+    top: 20px;
+    left: 168px;
+  }
+  button{
+    border-radius: 25%;
+    font-size: 35pt;
+    font-weight: bold;
+    box-shadow: 8px 8px 15px 5px #3e3c3c;
+  }
+
+  .toggle {
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+  
+  .button {
+    border-radius: 50% !important;
+    font-size: 22px;
+    background-color: lightgray;
+  }
+  
+  #switches {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 46px;
+    margin-top: 200px;
+  }
+  
+  .text2 {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 225px;
+    margin-top: 275px;
+    
+  }
+  
+  .text1 {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 140px;
+    margin-top: 182px;
+  }
+  
+  span{
+    padding: 30px;
+  }
+  
+   
+  #turn {
+    position: absolute;
+    background: #330000;
+    color: red;
+    font-family: courier;
+    font-size: 20px;
+    height: 30px;
+    width: 50px;
+    margin-left: 225px;
+    margin-top: 310px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+  }
+  
+
+  @media( max-width:565px  ){
+    h1{
+      text-align: left;
+    }
+    
+    #outerCircle {
+      background: #6e737b;
+      border-radius: 50%;
+      height: 400px;
+      width: 400px;
+      position: relative;
+      border-style: solid;
+      border-width: 10px;
+      margin: auto;
+      margin-top: 60px;
+      box-shadow: 8px 8px 15px 5px #888888;
+    }
+    
+    #topLeft {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      border-radius: 200px 0 0 0;
+      background: rgb(2, 99, 2);
+      top: 50%;
+      left: 50%;
+      margin: -200px 2px 2px -200px;
+      border-style: groove;
+      border-width: 5px;
+      box-sizing: border-box;
+    
+    }
+    
+    #topRight {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      border-radius: 0 200px 0 0;
+      background: rgb(140, 6, 6);
+      top: 50%;
+      left: 50%;
+      margin: -200px 2px 2px 2px;
+      border-style: groove;
+      border-width: 5px;
+      box-sizing: border-box;
+    }
+    
+    #bottomLeft {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      border-radius: 0 0 0 200px;
+      background: rgb(206, 158, 36);
+      top: 50%;
+      left: 50%;
+      margin: 2px -200px 2px -200px;
+      border-style: groove;
+      border-width: 5px;
+      box-sizing: border-box;
+    }
+    
+    #bottomRight {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      border-radius: 0 0 200px 0;
+      background: rgb(5, 5, 138);
+      top: 50%;
+      left: 50%;
+      margin: 2px 2px -200px 0px;
+      border-style: groove;
+      border-width: 5px;
+      box-sizing: border-box;
+    }
+    
+    #innerCircle {
+      position: absolute;
+      background: rgb(130, 128, 128);
+      border-radius: 50%;
+      height: 180px;
+      width: 180px;
+      border-style: groove;
+      border-width: 10px;
+      top: 235px;
+      left: 235px;
+      margin: -125px 2px 2px -125px;
+      box-sizing: border-box;
+     
+    }
+    .button{
+      position: absolute;
+      top: 10px;
+      left: 158px;
+      border-radius: 50%;
+      font-size: 22px;
+      background-color: lightgray;
+    }
+    button{
+      border-radius: 25%;
+      font-size: 35pt;
+      font-weight: bold;
+      box-shadow: 8px 8px 15px 5px #3e3c3c;
+    }
+  
+    .toggle {
+      margin-left: 120px;
+      margin-top: 20px;
+    }
+    
+    
+    #switches {
+      position: absolute;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-left: 3px;
+      margin-top: 170px;
+    }
+    
+    .text2 {
+      position: absolute;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-left: 175px;
+      margin-top: 215px;
+      
+    }
+    
+    .text1 {
+      position: absolute;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-left: 95px;
+      margin-top: 162px;
+    }
+    
+    span{
+      padding: 30px;
+    }
+    
+     
+    #turn {
+      position: absolute;
+      background: #330000;
+      color: red;
+      font-family: courier;
+      font-size: 20px;
+      height: 30px;
+      width: 50px;
+      margin-left: 175px;
+      margin-top: 240px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 30px;
+    }
+    
+
+
+  }
