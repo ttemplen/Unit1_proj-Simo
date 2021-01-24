@@ -93,6 +93,7 @@ function gameTurn(){
 function one(){
     if(noise) {
         let audio = document.querySelector('#clip1');
+        audio.play();        
     }
     noise = true;
     topLeft.style.backgroundColor="lightgreen";
@@ -101,6 +102,7 @@ function one(){
 function two(){
     if(noise) {
         let audio = document.querySelector('#clip2');
+        audio.play();
     }
     noise = true;
     topRight.style.backgroundColor="tomato";
@@ -108,6 +110,7 @@ function two(){
 function three(){
     if(noise) {
         let audio = document.querySelector('#clip3');
+        audio.play();
     }
     noise = true;
     bottomLeft.style.backgroundColor="yellow";
@@ -115,6 +118,7 @@ function three(){
 function four(){
     if(noise) {
         let audio = document.querySelector('#clip4');
+        audio.play();
     }
     noise = true;
     bottomRight.style.backgroundColor="lightskyblue";
