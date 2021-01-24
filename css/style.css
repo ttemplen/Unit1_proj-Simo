@@ -90,11 +90,7 @@ h1{
     box-sizing: border-box;
    
   }
-  .button{
-    position: absolute;
-    top: 20px;
-    left: 168px;
-  }
+ 
   button{
     border-radius: 25%;
     font-size: 35pt;
@@ -102,12 +98,11 @@ h1{
     box-shadow: 8px 8px 15px 5px #3e3c3c;
   }
 
-  .toggle {
-    margin-left: 120px;
-    margin-top: 20px;
-  }
-  
+    
   .button {
+    position: absolute;
+    top: 100px;
+    left: 168px;
     border-radius: 50% !important;
     font-size: 22px;
     background-color: lightgray;
@@ -124,7 +119,7 @@ h1{
     position: absolute;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 225px;
-    margin-top: 275px;
+    margin-top: 145px;
     
   }
   
@@ -133,6 +128,10 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 140px;
     margin-top: 182px;
+  }
+  .toggle {
+    margin-left: 120px;
+    margin-top: 35px;
   }
   
   span{
@@ -149,7 +148,7 @@ h1{
     height: 30px;
     width: 50px;
     margin-left: 225px;
-    margin-top: 310px;
+    margin-top: 180px;
     text-align: center;
     vertical-align: middle;
     line-height: 30px;
@@ -247,7 +246,7 @@ h1{
     }
     .button{
       position: absolute;
-      top: 10px;
+      top: 70px;
       left: 158px;
       border-radius: 50%;
       font-size: 22px;
@@ -262,7 +261,7 @@ h1{
   
     .toggle {
       margin-left: 120px;
-      margin-top: 20px;
+      margin-top: 35px;
     }
     
     
@@ -277,7 +276,7 @@ h1{
       position: absolute;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       margin-left: 175px;
-      margin-top: 215px;
+      margin-top: 135px;
       
     }
     
@@ -302,7 +301,7 @@ h1{
       height: 30px;
       width: 50px;
       margin-left: 175px;
-      margin-top: 240px;
+      margin-top: 170px;
       text-align: center;
       vertical-align: middle;
       line-height: 30px;

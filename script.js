@@ -1,10 +1,10 @@
 
 
-let order=[]; // computers oder array
-let playerOrder=[]; // players order array
-let flash; /// the numer of the color to flash 1 thru 4 is stored here
-let turn;// the round 1 thr 20 is stored here
-let good; // stores whether the player matched the comp seq, is true/false
+let order=[];
+let playerOrder=[];
+let flash;
+let turn;
+let good;
 let compTurn;
 let intervalId;
 let strict = false;
@@ -38,7 +38,7 @@ onButton.addEventListener('click',(event)=>{
         clearInterval(intervalId);
     }
 });
-// button starts starts the game
+
 startButton.addEventListener('click',(event)=>{
     if(on ||win){
         play();
@@ -46,31 +46,22 @@ startButton.addEventListener('click',(event)=>{
 });
 
 function play(){
-    // win = false; set the intial status of the game
+    
     win = false;
-    // empty array to push values for  order to, up to 20 values
     order = [];
-    // empty array to hold player order in
     playerOrder = [];
-    // setting the 4 colors to not be in flash mode
     flash = 0;
-    //how much time betwee flashes
     intervalId = 0;
-    // setting the first turn to 1, it will go up
     turn = 1;
-    // set the turn counters innerHtml value to 1 initially at the start
     turnCounter.innerHTML = 1;
     good = true;
     for(let i=0;i<20;i++){
         order.push(Math.floor(Math.random()*4)+1);
     }
-    //computer goes first, set compturn= true
     compTurn=true;
-    // runs the gameturn funtion every 600ms.
-    intervalId = setInterval(gameTurn, 600);
+    intervalId = setInterval(gameTurn, 800);
 }
 function gameTurn(){
-   // prevents the player from click buttons during comp sequence
     on=false;
     if(flash == turn ){
         clearInterval(intervalId);
@@ -95,7 +86,7 @@ function gameTurn(){
                 four();
             }    
             flash++;
-        },200)
+        },400)
     }
 }
 
@@ -128,14 +119,14 @@ function four(){
     noise = true;
     bottomRight.style.backgroundColor="lightskyblue";
 }
-/// resets the gamecolors to the orginal state, not bright.
+
 function clearColor(){
     topLeft.style.backgroundColor="rgb(2, 99, 2)";
     topRight.style.backgroundColor="rgb(140, 6, 6)";
     bottomLeft.style.backgroundColor="rgb(206, 158, 36)";
     bottomRight.style.backgroundColor="rgb(5, 5, 138)";
 }
-///changes all 4 areas to the the bright colors
+
 function flashColor(){
     topLeft.style.backgroundColor="lightgreen";
     topRight.style.backgroundColor="tomato";
@@ -151,8 +142,11 @@ topLeft.addEventListener('click', (event)=>{
         if(win){
             setTimeout(()=>{
             clearColor();
-        }, 300);
-    
+        }, 500);
+      }else{
+        setTimeout(()=>{
+            clearColor();
+        }, 500);
       }
     }
 })
@@ -164,8 +158,11 @@ topRight.addEventListener('click', (event)=>{
         if(win){
             setTimeout(()=>{
             clearColor();
-        }, 300);
-    
+        }, 500);
+      }else{
+        setTimeout(()=>{
+            clearColor();
+        }, 500);
       }
     }
 })
@@ -177,8 +174,11 @@ bottomLeft.addEventListener('click', (event)=>{
         if(win){
             setTimeout(()=>{
             clearColor();
-        }, 300);
-    
+        }, 500);
+      } else{
+        setTimeout(()=>{
+            clearColor();
+        }, 500);
       }
     }
 })
@@ -190,8 +190,11 @@ bottomRight.addEventListener('click', (event)=>{
         if(win){
             setTimeout(()=>{
             clearColor();
-        }, 300);
-    
+        }, 500);
+      } else{
+        setTimeout(()=>{
+            clearColor();
+        }, 500);
       }
     }
 })
@@ -235,6 +238,7 @@ function winGame(){
     flashColor();
     turnCounter.innerHTML="Win!";
     on= false;
-    win=true;
 
 }
+
+console.log('hello')
