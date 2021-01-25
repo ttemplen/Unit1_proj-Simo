@@ -245,4 +245,4 @@ function winGame(){
 
 }
 
-console.log('hello')
+///console.log('hello')
